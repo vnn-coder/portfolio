@@ -11,7 +11,7 @@ Personal portfolio showcasing my projects, skills, and growth in software develo
 Here you will find projects that represent my growth and progress in software development.
 
 <a href="https://github.com/vnn-coder/portfolio">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=vnn-coder&repo=portfolio&theme=github_dark&hide_border=true&title_color=8B5CF6&icon_color=8B5CF6" />
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=vnn-coder&repo=portfolio&theme=github_dark&hide_border=true&title_color=8B5CF6&icon_color=8B5CF6&v=2" />
 </a>
 
 
@@ -33,10 +33,7 @@ The goal is to keep everything simple, organized, and constantly updated as I im
 
 ### > Profile
 
-<a href="https://github.com/vnn-coder">
-  <img src="https://img.shields.io/badge/GitHub-vnn--coder-181717?style=for-the-badge&logo=github&logoColor=white">
-</a>
-
-<a href="https://www.linkedin.com/in/vinicius-mota-software/">
-  <img src="https://img.shields.io/badge/LinkedIn-Vinícius%20Mota-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
-</a>
+<p>
+  <img src="https://img.shields.io/badge/GitHub-vnn--coder-0D1117?style=for-the-badge&logo=github&logoColor=8B5CF6">
+  <img src="https://img.shields.io/badge/LinkedIn-Vinícius_Mota-0D1117?style=for-the-badge&logo=linkedin&logoColor=8B5CF6">
+</p>
