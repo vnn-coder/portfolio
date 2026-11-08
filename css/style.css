@@ -36,14 +36,12 @@ h1 {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Efeito do botão */
-
-.botao-github {
+.botao-github:hover {
     background-color: #7045d4;
     transform: translateY(-3px);
 }
 
-/* Cabeçalho */
+/* Cabeçalho & Menu */
 
 .menu {
     display: flex;
@@ -51,28 +49,32 @@ h1 {
     justify-content: flex-end;
 }
 
-/* Links do menu */
-
 .menu a {
     color: var(--text-primary);
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-/* Efeitos dos links do menu */
 
-.menu a:hover {
+.menu a:hover,
+.menua:focus-visible {
     color: var(--accent);
 }
 
-/* Cards dos projetos */
+/* Organização dos projetos */
 
 .card-projeto {
     background-color: #171722;
     padding: 24px;
     border-radius: 12px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    border: 1px solid transparent;
 }
 
-/* Organização dos projetos */
+.card-projeto:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+}
 
 .projetos {
     display: grid;
@@ -80,14 +82,67 @@ h1 {
     gap: 24px;
 }
 
-/* Status dos projetos */
-
-.card-projeto span {
+.card-projeto > span {
     color: var(--accent);
     background-color: #2a203d;
     display: inline-block;
     padding: 8px 12px;
     border-radius: 8px;
+}
+
+.links-projeto {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.links-projeto a {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    padding: 9px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: transform 0.3s ease;
+}
+
+.links-projeto  a:hover {
+    transform: translateY(-2px);
+}
+
+.links-projeto a svg,
+.links-projeto img {
+    width: 15px;
+    height: 15px;
+    transform: translateX(-3px);
+}
+
+.links-projeto .link-demo svg {
+    stroke: rgba(0, 0, 0, 0.548);
+    transition: trasnform 0.3s ease;
+}
+
+.links-projeto .link-demo {
+    background-color: var(--accent);
+    color: white;
+}
+
+.links-projeto .link-codigo {
+    border: 1px solid var(--accent);
+    color: white;
+}
+
+.links-projeto .link-codigo img {
+    transition: transform 0.3s ease;
+}
+
+
+.links-projeto a span {
+    display: inline-block;
+    background: transparent;
+    border: none;
+    transition: transform 0.3s ease;
 }
 
 /* Responsividade para celulares */
@@ -140,9 +195,13 @@ h1 {
     #sobre {
         margin-top: 120px;
     }
+
+    footer {
+        margin-top: 60px;
+    }
 }
 
-/* Seção Sobre mim */
+/* Texto de apresentação */
 
 #sobre {
     margin-top: 80px;
@@ -154,9 +213,13 @@ h1 {
     color: var(--accent);
 }
 
-/* Texto da seção Sobre mim */
-
 #sobre p {
+    line-height: 1.6;
+    max-width: 650px;
+}
+
+.descricao {
+    max-width: 480px;
     line-height: 1.6;
 }
 
@@ -180,9 +243,8 @@ html {
     background-color: #2a203d;
     padding: 8px 12px;
     border-radius: 8px;
+    transition: transform 0.3s ease;
 }
-
-/* Cores das tecnologias */
 
 #tecnologias .html {
     background-color: #2a203d;
@@ -198,3 +260,20 @@ html {
     background-color: #2a203d;
     color: #facc15;
 }
+
+#tecnologias li:hover {
+    transform: translateY(-1px);
+}
+
+#tecnologias {
+    margin-top: 50px;
+}
+
+/* Rodapé */
+
+footer {
+    margin-top: 100px;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
