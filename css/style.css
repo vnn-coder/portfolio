@@ -145,6 +145,29 @@ h1 {
     transition: transform 0.3s ease;
 }
 
+/* Seção de contato */
+
+#contato {
+    margin-top: 80px;
+    border-left: 3px solid var(--accent);
+    padding-left: 16px;
+}
+
+#contato a {
+    display: inline-block;
+    margin-top: 7px;
+    padding: 12px 24px;
+    background-color: var(--accent);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#contato a:hover {
+    transform: translateY(-3px);
+}
+
 /* Responsividade para celulares */
 
 @media (max-width: 900px) {
