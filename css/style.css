@@ -147,7 +147,19 @@ h1 {
 
 /* Responsividade para celulares */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+    .menu {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .menu a {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    
     .projetos {
         grid-template-columns: 1fr;
     }
