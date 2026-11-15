@@ -154,19 +154,31 @@ h1 {
 }
 
 #contato a {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     margin-top: 7px;
-    padding: 12px 24px;
+    padding: 10px 12px;
     background-color: var(--accent);
     color: white;
     text-decoration: none;
     border-radius: 8px;
     transition: transform 0.3s ease;
+    width: 100px;
+    justify-content: center;
+    white-space: nowrap;
+    font-size: 15px;   
 }
 
 #contato a:hover {
     transform: translateY(-3px);
 }
+
+#contato a:first-of-type {
+    padding-right: 16px;
+    padding-left: 17px;
+} 
+
 
 /* Responsividade para celulares */
 
